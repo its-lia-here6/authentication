@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #ffe6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.25);
+  border: 2px solid #ffd1e8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff4d88;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff66a3;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #cc3366;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #ffd1e8;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff66a3;
+  box-shadow: 0 0 8px rgba(255, 102, 163, 0.3);
+}
+
+.main-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff4d88, #ff99cc);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.3);
+}
+
+.main-btn:active {
+  transform: scale(0.97);
+}
+
+.message {
+  margin-top: 20px;
+  text-align: center;
+  color: #ff3366;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#profile {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fff0f6;
+  border: 1px solid #ffd1e8;
+}
+
+#profile p {
+  margin: 8px 0;
+  color: #cc3366;
+}
+
+button + button {
+  margin-top: 12px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 92%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.password-wrapper button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}

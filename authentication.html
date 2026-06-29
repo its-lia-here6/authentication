@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication System</title>
+    <link rel="icon" type="image/png" href="icon/edited-photo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="authentication.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Authentication System</h1>
+
+        <div id="loginPage">
+          <h2>Login</h2>
+
+          <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="username" />
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" />
+              <button id="togglePassword">👁</button>
+            </div>
+          </div>
+
+          <button id="loginBtn" class="main-btn">Login</button>
+        </div>
+
+        <div id="dashboard" class="hidden">
+          <h2>Dashboard</h2>
+
+          <p id="welcome"></p>
+
+          <button id="showProfileBtn" class="main-btn">Show Profile</button>
+
+          <button id="showUsersBtn" class="main-btn">
+            Show All Users (Admin)
+          </button>
+
+          <button id="changePasswordPageBtn" class="main-btn">
+            Change Password
+          </button>
+
+          <button id="logoutBtn" class="main-btn">Logout</button>
+
+          <div id="profile"></div>
+        </div>
+
+        <div id="changePasswordPage" class="hidden">
+          <h2>Change Password</h2>
+
+          <div class="input-group">
+            <label>Current Password</label>
+            <input type="password" id="oldPassword" />
+          </div>
+
+          <div class="input-group">
+            <label>New Password</label>
+            <input type="password" id="newPassword" />
+          </div>
+
+          <button id="changePasswordBtn" class="main-btn">
+            Change Password
+          </button>
+
+          <button id="backBtn" class="main-btn">Back</button>
+        </div>
+
+        <p class="message"></p>
+      </div>
+    </div>
+
+    <script src="authentication.js"></script>
+  </body>
+</html>
